@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Test page</title>
+		
+		<style>
+			#test { display: none; }
+		</style>
+		
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="homescreenadd.js"></script>
+		<script>
+			$(function() {
+				$('#test').homescreenadd();
+				
+				$('#close').click(function() {
+					$('#test').homescreenadd('close');
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div id="test">
+			<div class="instructions">Instructions get inserted here</div>
+			<div id="close">X</div>
+		</div>
+	</body>
+</html>
